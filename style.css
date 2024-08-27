@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+  color: rgb(59, 232, 43);
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  height: 100vh;
+}
+.text-padding{
+    height: 50px;
+    padding: 20px;
+    margin: 200px auto;
+}
+
+.text-padding p{
+    font-size: 24px;
+    animation: typing 10s steps(30) infinite, blink 1s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    background:#547d19;
+    padding: 20px 0;
+    box-shadow: 0 0 5px #547d19, 0 0 5px #547d19 inset;
+}
+
+@keyframes typing {
+    0%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+	0%,
+	100% {
+		border-right: 10px solid #96ee1c;
+	}
+	50% {
+		border-right: 10px solid #96ee1c;
+	}
+}
